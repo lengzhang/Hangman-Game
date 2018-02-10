@@ -47,7 +47,7 @@ connection_list = []
 
 # [player 1 id, player 2 id, ...]
 online_player_id_list = []
-# {player_id : [conn, user name, score], ...}
+# {player_id : [conn, user name, score], player_id : [conn, user name, score], ...}
 online_list = {}
 # {game id : [Question, Answer, Incorrect, current player index, player 1 id, player 2 id, player 3 id], ...}
 games_list = {}
