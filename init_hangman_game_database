@@ -1,0 +1,15 @@
+#! /bin/bash
+
+#PATH TO DATABASE FOLDER
+export PGFOLDER=$PWD
+
+#PATH TO DATA FOLDER
+export PGDATA=$PGFOLDER/myDB/data
+
+#DATABASE LISTENING PORT
+export PGPORT=7432
+
+if [ $# == 0 ]
+then
+    psql -h 127.0.0.1 -p $PGPORT hangman_game < hangman_game.sql
+fi
